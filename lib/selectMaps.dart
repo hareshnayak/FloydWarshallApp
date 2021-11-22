@@ -3,7 +3,7 @@ import 'package:shortest_path/widgets.dart';
 
 
 class SelectMaps extends StatefulWidget {
-  const SelectMaps({Key? key}) : super(key: key);
+  const SelectMaps({Key key}) : super(key: key);
 
   @override
   _SelectMapsState createState() => _SelectMapsState();

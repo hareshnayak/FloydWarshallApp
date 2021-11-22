@@ -9,7 +9,18 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
+const int inf = 10000000;
+
 class _MyHomePageState extends State<MyHomePage> {
+  List<List<int>> graph =  [[0, inf, inf, 3, inf, inf],
+    [inf, inf, inf, inf, inf, inf],
+    [inf, inf, 0, inf, inf, inf],
+    [inf, inf, inf, inf, inf, inf],
+    [inf, 0, 2, 1, inf, inf],
+    [inf, inf, inf, inf, inf, inf],
+    [inf, 0, inf, 0, inf, 2],
+    [inf, inf, inf, inf, inf, inf],];
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -86,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     child: InkWell(
                       onTap: () {
-                        floydWarshall(graph)
+                        floydWarshall(graph);
                       },
                       child: Text(
                         'Find Shortest Path',

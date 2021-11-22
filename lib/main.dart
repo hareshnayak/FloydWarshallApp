@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shortest_path/home.dart';
+import 'package:shortest_path/selectMaps.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Shortest Path Finder'),
+      home: SelectMaps(),
     );
   }
 }
